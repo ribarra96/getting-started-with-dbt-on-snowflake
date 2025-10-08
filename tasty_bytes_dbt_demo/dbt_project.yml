@@ -1,5 +1,5 @@
 ## Project
-name: snowflake_demo
+name: tasty_bytes_dbt_demo
 version: "1.0"
 config-version: 2
 profile: snowflake_demo
@@ -18,7 +18,7 @@ clean-targets: [target, dbt_modules]
 
 ## Models
 models:
-  snowflake_demo:
+  tasty_bytes_dbt_demo:
     staging:
       +materialized: view
     marts:
