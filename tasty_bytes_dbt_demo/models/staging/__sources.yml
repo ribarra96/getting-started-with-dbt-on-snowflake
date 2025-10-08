@@ -1,7 +1,7 @@
 version: 2
 sources:
 - name: stg_onepiece
-  description: 'Point of Sale source data'
+  description: 'One Piece source data'
   database: streamlit_apps
   schema: ribarra_appss
   tables:
