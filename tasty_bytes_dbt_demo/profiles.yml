@@ -1,4 +1,4 @@
-tasty_bytes:
+snowflake_demo:
   target: dev
   outputs:
     dev:
@@ -6,14 +6,14 @@ tasty_bytes:
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
-      database: tasty_bytes_dbt_db
+      database: streamlit_apps
       schema: dev
-      warehouse: tasty_bytes_dbt_wh
+      warehouse: compute_wh
     prod:
       type: snowflake
       account: 'not needed'
       user: 'not needed'
       role: accountadmin
-      database: tasty_bytes_dbt_db
+      database: streamlit_apps
       schema: prod
-      warehouse: tasty_bytes_dbt_wh
+      warehouse: compute_wh
