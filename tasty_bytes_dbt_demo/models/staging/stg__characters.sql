@@ -1,6 +1,3 @@
--- models/dim_characters.sql
-{{ config(materialized='incremental', unique_key='character_name', on_schema_change='sync') }}
-
 with src as (
   select payload from {{ source('onepiece_staging','STG_ONEPIECE_CHARACTERS') }}
 ),
@@ -14,6 +11,4 @@ flat as (
   from src
 )
 select * from flat
-{% if is_incremental() %}
-where character_name not in (select character_name from {{ this }})
-{% endif %}
+
